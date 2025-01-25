@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #e39318;
+    --secondary-color: #198ce3;
+    --accent1: #a3793b;
+    --accent2: #3f6c8e;
+}
+
+h1, h2 {
+    font-family: 'Port Lligat Slab', Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: Inter, Verdana, Arial, Helvetica, Tahoma, sans-serif;
+}
+
+section, footer p, nav {
+    max-width: 1170px;
+    margin: auto;
+}
+
+
+/* Class Style*/
+
+.hero {
+    position: relative;
+    max-width: 1170px;
+    margin: auto;
+}
+
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50px;
+    width: 1170px;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--accent2);
+    color: #ffffff;
+}
+
+.hero article {
+    position: absolute;
+    max-width: 900px;
+    left: 120px;
+    top: 200px;
+    padding: 1rem;
+    background-color: var(--accent2);
+    color: #ffffff;
+}
+
+.hero article img {
+    width: 200px;
+    float: right;
+}
+
+.social-links a{
+    text-decoration: none;
+}
