@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 130 | HTML Form - User Poll</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Levi Omagbemi | HTML Form - User Poll</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" name="useremail" id="useremail">
+                </div>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Questions</legend>
+
+                <div class="form-item column1">
+                    <label for="browser">What is your favourite internet browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="Microsoft Edge">Microsoft Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="opera">Opera</option>
+                        <option value="safari">Safari</option>
+                        <option value="chrome">Chrome</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+              
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+               
+                <div class="form-item column1">
+                    <label for="feedback">Feedback</label>
+                    <textarea name="feedback" id="feedback" rows="4" placeholder="Delta State, Anambra State, Abuja, Lagos"></textarea>
+                </div>
+               
+            </fieldset>
+
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; | HTML Form - User Poll Activity | Levi Omagbemi</p>
+    </footer>
+</body>
+</html>
