@@ -246,6 +246,6 @@ footer .social-links a img {
     padding: 12px;
     width: 200px;
     border: none;
-    background-color: var(--secondary-color);
+    background-color: var(--accent2);
     color: #fff;
 }
