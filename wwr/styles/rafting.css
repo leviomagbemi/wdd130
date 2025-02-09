@@ -19,6 +19,10 @@ p {
     font-family: Inter, Verdana, Arial, Helvetica, Tahoma, sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -43,6 +47,19 @@ section, footer, nav {
     max-width: 1170px;
     margin: auto;
     padding: 24px 0;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 50% 10%;
+    justify-content: end;
+    align-items: center;
+}
+
+
+footer nav {
+    display: flex;
+    gap: 16px;
 }
 
 
@@ -118,18 +135,6 @@ section, footer, nav {
     max-width: 150px;
 }
 
-footer {
-    display: grid;
-    grid-template-columns: 50% 10%;
-    justify-content: end;
-    align-items: center;
-}
-
-
-footer nav {
-    display: flex;
-    gap: 16px;
-}
 
 footer .social-links {
     justify-self: end;
@@ -142,4 +147,105 @@ footer .social-links a img {
 
 .social-links a{
     text-decoration: none;
+}
+
+
+/* Contact page class styling */
+.container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.contact-hero h1 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.contact-hero .contact-info {
+    padding: 16px;
+    background-color: var(--accent2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.contact-hero .contact-info div{
+    color: #fff;
+}
+
+.contact-hero .contact-info div h2{
+    margin-bottom: 16px;
+}
+
+.employees h2, figcaption {
+    text-align: center;
+}
+
+.employees figure img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.employees h2, img {
+    margin-bottom: 24px;
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.form-section .form-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 32px 16px;
+    border: 2px solid #222;
+    border-radius: 8px;
+    position: relative;
+}
+
+.form-section .form-container form fieldset {
+    border: none;
+}
+
+.form-section .form-container form fieldset legend {
+    position: absolute;
+    top: -10px;
+    background-color: #fff;
+}
+
+.form-section .form-container form fieldset div {
+    margin-bottom: 24px;
+}
+
+.form-section .form-container form fieldset div input, textarea {
+    display: block;
+    width: 100%;
+    padding: 16px;
+}
+
+.form-section .form-container form fieldset div label {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.form-section .form-container form input[type="radio"] {
+    display: inline-block;
+    width: auto;
+}
+
+.form-section .form-container form input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+.form-section .form-container form button[type="submit"] {
+    padding: 12px;
+    width: 200px;
+    border: none;
+    background-color: var(--secondary-color);
+    color: #fff;
 }
